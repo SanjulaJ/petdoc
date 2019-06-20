@@ -1,0 +1,440 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Mat Button
+// -----------------------------------------------------------------------------
+
+// =================Button Colors=============================
+
+$fs_btn-default: #ffffff !default;
+$fs_btn-active: #03a9f4 !default;
+$fs_btn-secondary: #8bc34a !default;
+$fs_btn-disable: #9e9e9e !default;
+$fs_btn-success: #333 !default;
+$fs_btn-warning: #333 !default;
+
+// ==================Box Shadow===============================
+
+@mixin box_shadow($level) {
+@if $level == 1 {
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+} @else if $level == 2 {
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+} @else if $level == 3 {
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+} @else if $level == 4 {
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} @else if $level == 5 {
+box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+}
+
+// =================Function Sheet Buttons====================
+
+// -----Mat Button-----
+
+.mat-button {
+height: 30px;
+font-size: 14px;
+line-height: 30px !important;
+color: #424242;
+padding: 0 35px !important;
+width: auto;
+&-small {
+height: 23px;
+font-size: 12px;
+line-height: 10px !important;
+color:#424242;
+padding: 0 15px;
+width: auto;
+}
+}
+
+.mat-icon-button {
+color: $fs_btn-disable;
+}
+
+.mat-fab {
+color: #424242;
+height: 30px !important;
+width: 30px !important;
+}
+
+.mat-fab-mini {
+color: #424242;
+}
+
+.mat-button-wrapper {
+line-height: 0px !important;
+padding: 0px !important;
+vertical-align: middle;
+}
+
+.__add{
+height: 29px !important;
+width: 40px !important;
+border-radius: 5px !important;
+border: 1px solid #ffffff !important;
+color: #ffffff;
+}
+
+.fs_mat-btn {
+
+// ----Primary Button-----
+
+&__primary {
+@extend .mat-button;
+border: 1px solid #424242 !important;
+background-color: $fs_btn-default;
+
+&:active {
+@include box_shadow(2);
+border: none !important;
+color: #ffffff !important;
+background-color: $fs_btn-active;
+}
+
+&:hover {
+@include box_shadow(1);
+border: none !important;
+transition: 0.3s !important;
+color: #ffffff !important;
+background-color: $fs_btn-active;
+}
+
+&--active {
+@extend .mat-button;
+background-color: $fs_btn-active;
+color: #ffffff !important;
+&:hover {
+@include box_shadow(2);
+}
+}
+
+&--disabled {
+@extend .mat-button;
+background-color: $fs_btn-disable;
+&:active {
+@include box_shadow(2);
+}
+
+&:hover {
+@include box_shadow(1);
+}
+}
+&-small{
+@extend .mat-button-small;
+background-color: $fs_btn-default;
+
+&:active {
+@include box_shadow(2);
+}
+
+&:hover {
+@include box_shadow(1);
+}
+&--active{
+@extend .mat-button-small;
+@extend .fs_mat-btn__primary--active;
+background-color: $fs_btn-active;
+}
+&--disabled{
+@extend .mat-button-small;
+@extend .fs_mat-btn__primary--disabled;
+background-color: $fs_btn-disable;
+}
+}
+}
+
+
+// ----Secondary Button-----
+
+&__secondary {
+@extend .mat-button;
+border: 1px solid #424242 !important;
+background-color: #ffffff;
+&:active {
+@include box_shadow(2);
+border: none !important;
+color: #ffffff !important;
+background-color: $fs_btn-secondary;
+}
+
+&:hover {
+@include box_shadow(1);
+border: none !important;
+color: #ffffff !important;
+background-color: $fs_btn-secondary;
+}
+
+&--active {
+background-color: $fs_btn-secondary;
+&:hover {
+@include box_shadow(2);
+}
+}
+
+&--disabled {
+background-color: $fs_btn-disable;
+&:active {
+// @include box_shadow(2);
+}
+
+&:hover {
+// @include box_shadow(1);
+}
+}
+
+&-small{
+@extend .mat-button-small;
+background-color: $fs_btn-secondary;
+&:active {
+@include box_shadow(2);
+}
+
+&:hover {
+@include box_shadow(1);
+}
+&--active{
+@extend .mat-button-small;
+@extend .fs_mat-btn__secondary--active;
+}
+&--disabled{
+@extend .mat-button-small;
+@extend .fs_mat-btn__secondary--disabled;
+}
+}
+}
+
+// ----Rounded Button-----
+
+&__rounded {
+@extend .mat-button;
+border-radius: 15px!important;
+background-color: $fs_btn-secondary;
+&:active {
+@include box_shadow(2);
+}
+
+&:hover {
+@include box_shadow(1);
+}
+
+&--active {
+@extend .mat-button;
+border-radius: 15px!important;
+background-color: $fs_btn-secondary;
+
+&:hover {
+@include box_shadow(2);
+}
+}
+
+&--disabled {
+@extend .mat-button;
+border-radius: 15px!important;
+background-color: $fs_btn-disable;
+&:active {
+// @include box_shadow(2);
+}
+
+&:hover {
+// @include box_shadow(1);
+}
+}
+
+&-small{
+@extend .mat-button-small;
+border-radius: 10px!important;
+background-color: $fs_btn-default;
+&--active{
+@extend .mat-button-small;
+@extend .fs_mat-btn__rounded--active;
+border-radius: 10px!important;
+background-color: $fs_btn-secondary;
+}
+&--disabled{
+@extend .mat-button-small;
+@extend .fs_mat-btn__rounded--disabled;
+border-radius: 10px!important;
+background-color: $fs_btn-secondary;
+}
+}
+}
+
+// ----Icon Button-----
+
+&-icon {
+// background-color: $fs_btn-secondary;
+&:active {
+@include box_shadow(2);
+}
+
+&:hover {
+@include box_shadow(1);
+}
+
+&--active {
+// background-color: $fs_btn-secondary;
+&:hover {
+@include box_shadow(2);
+}
+}
+
+&--disabled {
+// background-color: $fs_btn-disable;
+&:active {
+// @include box_shadow(2);
+}
+
+&:hover {
+// @include box_shadow(1);
+}
+}
+}
+
+// Number button
+&-count {
+.mat-button-wrapper {
+display: flex !important;
+align-items: center;
+}
+.fs-btn-count-value {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #909cac;
+color: #fff;
+height: 20px;
+width: 20px;
+border-radius: 50%;
+line-height: 1px;
+}
+}
+
+// -------Fab Icon Button------------
+
+&__fab{
+@extend .mat-button-wrapper;
+@extend .mat-fab;
+background-color: $fs_btn-secondary !important;
+&:active {
+@include box_shadow(2);
+}
+
+&:hover {
+@include box_shadow(1);
+}
+
+&--active {
+@extend .mat-fab;
+@extend .mat-button-wrapper;
+background-color: $fs_btn-secondary !important;
+
+&:hover {
+@include box_shadow(2);
+}
+}
+
+&--disabled {
+@extend .mat-fab;
+@extend .mat-button-wrapper;
+background-color: $fs_btn-secondary !important;
+&:active {
+// @include box_shadow(2);
+}
+
+&:hover {
+// @include box_shadow(1);
+}
+}
+
+}
+
+// -------Fab Mini Icon Button------------
+
+&__mini-fab{
+@extend .mat-fab-mini;
+background-color: $fs_btn-default !important;
+&:active {
+@include box_shadow(2);
+}
+
+&:hover {
+@include box_shadow(1);
+}
+
+&--active {
+@extend .mat-fab-mini;
+background-color: $fs_btn-default !important;
+
+&:hover {
+@include box_shadow(2);
+}
+}
+
+&--disabled {
+@extend .mat-fab-mini;
+background-color: $fs_btn-disable !important;
+&:active {
+// @include box_shadow(2);
+}
+
+&:hover {
+// @include box_shadow(1);
+}
+}
+
+}
+
+// ------- Add Button------------
+
+&__add {
+@extend .mat-button;
+@extend .__add;
+@extend .mat-button-wrapper;
+.mat-button-wrapper{
+display: block;
+}
+background-color: $fs_btn-active;
+&:active {
+@include box_shadow(2);
+}
+
+&:hover {
+@include box_shadow(1);
+}
+
+&--active {
+@extend .mat-button;
+@extend .__add;
+background-color: $fs_btn-default;
+&:hover {
+@include box_shadow(2);
+}
+}
+
+&--disabled {
+@extend .mat-button;
+@extend .__add;
+background-color: $fs_btn-disable;
+&:active {
+// @include box_shadow(2);
+}
+
+&:hover {
+// @include box_shadow(1);
+}
+}
+}
+}
+
+
+
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------

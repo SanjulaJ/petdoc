@@ -1,0 +1,402 @@
+$base-text-color: #000;
+
+$color-base: $base-text-color;
+
+$light: lighten($color-base,60%);
+$dark: darken($color-base,15%);
+
+
+$lighter: lighten($color-base,30%);
+$darker: darken($color-base,30%);
+
+body{
+  color:$base-text-color ;
+  font-family: 'Roboto', sans-serif;
+}
+
+//circle-icon defalt colors
+$ci-bg--color :#eee !default;
+$ci-col-hover:#eee !default;
+$background-item:#fff;
+
+// state text  colors ...........................................
+
+.fs_txt__primary {
+  color: $fs_text-color__primary !important;
+}
+.fs_txt__secondary {
+  color: $fs_text-color__secondary !important;
+}
+.fs_txt__tertiary {
+  color: $fs_text-color__tertiary !important;
+}
+.fs_txt__quaternary {
+  color: $fs_text-color__quaternary !important;
+}
+
+
+//State link colors...........................................
+.fs_link--primary{
+  @include typo-body-1();
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: $fs_link-color__primary;
+  cursor: pointer;
+
+  &.__bold{
+    font-weight: 500;
+  }
+
+  &:hover{
+    color: darken($fs_link-color__primary,30%);
+  }
+}
+
+
+
+.fs_link--secondary{
+  @include typo-body-1();
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: $fs_link-color__secondary;
+
+  &.__bold{
+    font-weight: 500;
+  }
+
+  &:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: $fs_link-color__secondary;
+  }
+}
+
+
+// state background colors ...........................................
+
+
+.no-color__state_background{
+ background-color:$no-color--state  !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.active-color--state_background{
+  background-color:$active-color--state  !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.mute-color--state_background{
+  background-color:$mute-color--state  !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.firm-color--state_background{
+  background-color:$firm-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.alert-color--state_background{
+  background-color:$alert-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.definite-color--state_background{
+  background-color:$definite-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.quote-color--state_background{
+  background-color:$quote-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+
+// state icons and fonts  colors ...........................................
+
+.no-color--state{
+  color:$no-color--state !important;
+  i,p,&.chip span,span{
+    color:$no-color--state !important;
+  }
+}
+.active-color--state{
+  color:$active-color--state !important;
+  i,p,&.chip span,span{
+    color:$active-color--state !important;
+  }
+}
+.mute-color--state{
+  color:$mute-color--state !important;
+  i,p,&.chip span,span{
+    color:$mute-color--state !important;
+  }
+}
+.firm-color--state{
+  color:$firm-color--state !important;
+  i,p,&.chip span,span{
+    color:$firm-color--state !important;
+  }
+}
+.alert-color--state{
+  color:$alert-color--state !important;
+  i,p,&.chip span,span{
+    color:$alert-color--state !important;
+  }
+}
+.definite-color--state{
+  color:$definite-color--state !important;
+  i,p,&.chip span,span{
+    color:$definite-color--state !important;
+  }
+}
+
+.quote-color--state{
+  background-color:$quote-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+%tc-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fs_txt__underline{
+  text-decoration: underline;
+}
+.fs_txt__line-through{
+  text-decoration: line-through;
+}
+.fs_txt__line-overline{
+  text-decoration: overline;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.fs_txt__white-space-normal{
+  overflow-wrap: inherit;
+  white-space: inherit;
+}
+
+.fs_txt{
+  &__light {
+    color: $light; //black 60%
+  }
+  &__dark {
+    color: $dark; //black
+  }
+  &__lighter {
+    color: $lighter;
+  }
+  &__darker {
+    color: $darker;
+  }
+  &__align-right {
+   text-align: right;
+  }
+  &__align-left {
+    text-align: left !important;
+   }
+  &__right{
+        text-align: right;
+  }
+  &__left{
+    text-align: left;
+  }
+
+  &__center{
+    text-align: center;
+  }
+
+
+}
+
+fieldset.demo{
+  background-color: #fff;
+  legend{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  margin-bottom: 20px;
+
+}
+
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+      padding: 0;
+    }
+
+     h1.fs_heading-1 small,   h2.fs_heading-2 small, h3.fs_heading-3 small, h4.fs_heading-4 small,   h5.fs_heading-5 small, h6.fs_heading-6 small {
+      @include typo-display-3($colorContrast: false);
+      font-size: 0.6em;
+    }
+
+  h1.fs_heading-1 {
+  @include typo-display-3;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    @extend %tc-ellipsis;
+  }
+
+  h2.fs_heading-2 {
+    @include typo-display-2;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h3.fs_heading-3 {
+    @include typo-display-1;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .fs_subtitle-1 {
+    @include typo-headline;
+    font-size: 14px ;
+    line-height: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+    &-small{
+      @include typo-headline;
+      font-size: 12px ;
+      line-height: 12px;
+
+    }
+    &-large{
+      @include typo-headline;
+      font-size: 16px ;
+      line-height: 16px;
+    }
+  }
+
+  .fs_subtitle-2 {
+    @include typo-title;
+    font-size: 16px;
+    line-height: 16px;
+
+
+    &-small{
+      @include typo-title;
+      font-size: 14px ;
+      line-height: 14px;
+    }
+
+    &-large{
+      @include typo-title;
+      font-size: 18px ;
+      line-height: 18px;
+    }
+  }
+
+p {
+    @include typo-body-1;
+    margin-bottom: 16px;
+  }
+
+.lead{
+  @include typo-title;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.fs_txt__caption{
+  @include typo-caption;
+  font-style: normal;
+  color: #909cac;
+}
+.fs_txt__link{
+  @include typo-caption;
+  font-style: normal;
+  line-height: 16px;
+  color: #27bfc2;
+  text-decoration: none;
+}
+
+
+.fs_txt__body2{
+  @include typo-body-2;
+  @extend %tc-ellipsis;
+  line-height: 1.5;
+
+  &-small{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
+    font-size: 12px !important;
+  }
+
+  &-large{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
+    font-size: 14px;
+  }
+
+}
+
+.fs_txt__body1{
+  @include typo-body-1;
+  @extend %tc-ellipsis;
+
+  &-small{
+    font-size: 12px;
+    @extend %tc-ellipsis;
+  }
+
+  &-large{
+    font-size: 14px;
+    @extend %tc-ellipsis;
+  }
+
+}
+
+
+.tc-subheading {
+      @include typo-subhead;
+      @extend %tc-ellipsis;
+    }
+
+
+.my-bordered-list {
+  /* remove the side padding. we'll be placing it around the item instead. */
+  padding-right: 0;
+  padding-left: 0;
+}
+.my-bordered-list .mdc-list-item {
+  /* Add the list side padding padding to the list item. */
+  padding: 0 16px;
+  /* Add a border around each element. */
+  border: 1px solid rgba(0, 0, 0, .12);
+}
+/* Ensure adjacent borders don't collide with one another. */
+.my-bordered-list .mdc-list-item:not(:first-child) {
+  border-top: none;
+}
+//Font Weight
+
+.fs_fontweight{
+  &__normal{
+    font-weight: 400 !important;
+  }
+
+  &__medium{
+    font-weight: 500 !important;
+  }
+
+  &__bold{
+    font-weight: 600 !important;
+  }
+}

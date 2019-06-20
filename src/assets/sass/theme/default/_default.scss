@@ -1,0 +1,86 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+    @import "../abstract/colors";
+
+    // Typography
+    $font-family-sans-serif: "Roboto", "Helvetica", "Arial", sans-serif !default;
+    $font-family-serif: "Roboto Slab", "Times New Roman", serif !default;
+    $font-family-rubik: "Rubik", sans-serif;
+
+    $prefix: "fs_";
+
+    //optimo theme and color codes .....................
+
+    $fs_color_primary-blue: #f5c70e;
+    $fs_color_primary-red: #f44336 !default;
+    $fs_color_primary-green: #009688 !default;
+
+    $fs_color_secondary-green: #8BC34A !default;
+    $fs_color_secondary-blue: #03a9f4 !default;
+    $fs_color_secondary-gray: #9E9E9E !default;
+
+    $fs_color_white: #fff !default;
+    $fs_color_black: #000 !default;
+
+    $fs_color_tertiary: #f5c70e !default;
+    $fs_color_quaternary: #333e47;
+
+    $fs_icon-white: #fff;
+    $fs_icon-light: #f0f6fa !default;
+    $fs_icon-dark: #b8bcbf !default;
+    $fs_icon-darker: #a7aaaf !default;
+    $fs_icon-black: #3b414d !default;
+
+    //text colours..............................................
+    $fs_text-color__primary: #3a424d !default;
+    $fs_text-color__secondary: #909cac !default;
+    $fs_text-color__tertiary: #27bfc2;
+    $fs_text-color__quaternary: #4bb3fa;
+
+    //Link Colours..............................................
+    $fs_link-color__primary: #3a424d;
+    $fs_link-color__secondary: #27bfc2 !default;
+    $fs_link-color: #535353 !default;
+
+    //Border line color.........................................
+    $fs_border-color: #e0e0e0 !default;
+    $fs_border-color_light: #d9d9d9 !default;
+    $fs_border-color_darker: #ababab !default;
+    $fs_border-color_darkest: #77818a !default;
+    $fs_border-color_lighter: #b7b7b7 !default;
+
+    //button colors..............
+    $fs_btn-default: #91a0ad !default;
+    $fs_btn-disable: #91a0ad !default;
+    $fs_btn-success: #333 !default;
+    $fs_btn-warning: #333 !default;
+
+    //state colors..............
+    $no-color--state: #f5766c !default;
+    $active-color--state: $green-700 !default;
+    $mute-color--state: $grey-700 !default;
+    $firm-color--state: $blue-700 !default;
+    $alert-color--state: $yellow-700 !default;
+    $definite-color--state: $blue-grey-700 !default;
+    $quote-color--state: $brown-700 !default;
+    $success-color--state: #27bfc2 !default;
+    $cancelled-status: #0000;
+    $red-danger: $no-color--state;
+    $success_action: #69f0ae !default;
+    $success_action_new: #1ce884 !default;
+    $refund_status: #fbd46b !default;
+    $refund_status_darker: #ffb200 !default;
+
+    //Border line color.........................................
+    $fs_border-color: #e0e0e0 !default;
+    $fs_border-color_light: #d9d9d9 !default;
+    $fs_border-color_darker: #ababab !default;
+    $fs_border-color_darkest: #77818a !default;
+    $fs_border-color_lighter: #b7b7b7 !default;
+
+//Import basic theme
+@import '../main';

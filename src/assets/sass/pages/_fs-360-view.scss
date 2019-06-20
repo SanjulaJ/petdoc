@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the 360-view page.
+// -----------------------------------------------------------------------------
+.fs-chip--green{
+
+}
+
+//360 page notes section
+.fs-notes__panel {
+    .mat-expansion-panel-header {
+        .mat-content {
+            > .fs__flex-container {
+                width: 100%;
+            }
+        }
+    }
+}
