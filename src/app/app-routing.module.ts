@@ -9,7 +9,7 @@ import { PdAboutusComponent } from './pd-aboutus/pd-aboutus.component';
 
 const routes: Routes = [
 
-  { path: 'header', component: PdHeaderComponent  },
+  { path: 'pd-header', component: PdHeaderComponent  },
   { path: 'component-window', component: PdComponentWindowComponent  },
   { path: 'image-slider', component: PdImageSliderComponent  },
   { path: 'about-us', component: PdAboutusComponent  },
