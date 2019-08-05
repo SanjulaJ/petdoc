@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PdHeaderComponent } from './pd-header/pd-header.component';
+import { PdComponentWindowComponent } from './pd-component-window/pd-component-window.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PdHeaderComponent,
+    PdComponentWindowComponent
   ],
   imports: [
     BrowserModule,
