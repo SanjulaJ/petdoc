@@ -13,8 +13,13 @@
 @import "./base/base", "./base/flex", "./base/fonts", "./base/typography", "./base/helpers";
 
 // 4. Layout-related sections
-@import "./layout/header", "./layout/footer", "./layout/library";
+// @import "./layout/header", "./layout/footer", "./layout/library";
 
 // 5. Components
 @import "./components/buttons";
+
+// 6. Pages
+@import "./pages/pd-header";
+@import "./pages/pd-aboutus";
+@import "./pages/pd-section";
 
