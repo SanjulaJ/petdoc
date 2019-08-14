@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
+// import { OwlModule } from 'ngx-owl-carousel';
 
 
 
@@ -34,8 +35,11 @@ import { MatmoduleComponent } from './matmodule/matmodule.component';
     PdDocTeamComponent,
     PdHomeComponent,
     MatmoduleComponent,
+    // CarouselModule
   ],
   imports: [
+    // OwlModule,
+    CarouselModule,
     BrowserModule,
     AppRoutingModule,
     MatmoduleComponent

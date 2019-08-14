@@ -7,13 +7,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 
-
-@Component({
-  selector: 'app-matmodule',
-  templateUrl: './matmodule.component.html',
-  styleUrls: ['./matmodule.component.scss']
-})
-
 @NgModule({
   imports: [
     MatFormFieldModule,
@@ -29,6 +22,12 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatIconModule
   ]
+})
+
+@Component({
+  selector: 'app-matmodule',
+  templateUrl: './matmodule.component.html',
+  styleUrls: ['./matmodule.component.scss']
 })
 
 export class MatmoduleComponent implements OnInit {

@@ -1,3 +1,5 @@
+$assetPath : "/assets/images";
+
 /*=========================================================
 	HOME
 ===========================================================*/
@@ -8,7 +10,9 @@
   }
 
   #home .section-bg{
-background-image: url(/src/assets/images/background02.jpg);
+
+  background-image: url(#{$assetPath}/background-img1.jpg);
+  object-fit: cover;
   }
   
   #home .home-wrapper {
@@ -16,7 +20,7 @@ background-image: url(/src/assets/images/background02.jpg);
     top: 50%;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: left;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
