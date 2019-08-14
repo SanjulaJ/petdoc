@@ -10,6 +10,9 @@ import { PdBlogComponent } from './pd-blog/pd-blog.component';
 import { PdFeaturedBlogsComponent } from './pd-featured-blogs/pd-featured-blogs.component';
 import { PdDocTeamComponent } from './pd-doc-team/pd-doc-team.component';
 import { PdHomeComponent } from './pd-home/pd-home.component';
+import { PdBlogSearchComponent } from './pd-blog-search/pd-blog-search.component';
+import { PdCarouselComponent } from './pd-carousel/pd-carousel.component';
+import { PdInfoTopComponent } from './pd-info-top/pd-info-top.component';
 
 const routes: Routes = [
 
@@ -22,6 +25,9 @@ const routes: Routes = [
   { path: 'featured-blogs', component: PdFeaturedBlogsComponent  },
   { path: 'doc-team', component: PdDocTeamComponent  },
   { path: 'home', component: PdHomeComponent  },
+  { path: 'search', component: PdBlogSearchComponent  },
+  { path: 'carousel', component: PdCarouselComponent  },
+  { path: 'info', component: PdInfoTopComponent  },
 
 ];
 

@@ -1,5 +1,5 @@
 <!-- Home -->
-<div id="home">
+<div class="home">
   <!-- background image -->
   <div class="section-bg"></div>
   <!-- /background image -->
@@ -9,15 +9,24 @@
     <!-- container -->
     <div class="container">
       <!-- row -->
-      <div class="row">
+      <div class="row justify-content-center">
         <!-- home content -->
-        <div class="col-md-8 col-md-offset-2">
-          <div class="home-content">
+        <div class="col-md-6">
+          <div class="home-wrapper-content">
             <h1>Lorem ipsum dolor sit amet</h1>
             <h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
             <button mat-raised-button>SUBMIT</button>
           </div>
         </div>
+
+        <div class="col-md-6">
+          <div class="jumbotron">
+              <div class="img-upload">
+                  <app-pd-blog-search></app-pd-blog-search>
+                </div>
+          </div>
+            
+          </div>
         <!-- /home content -->
       </div>
       <!-- /row -->
